@@ -9,13 +9,15 @@ public class Vetores3 {
 		Random Rand = new Random();
 	
 		int[] Numeros = new int[8];
-		int Maior = Numeros[0];
-	    int Menor = Numeros[0];
+
 		
 		for(int i=0; i<Numeros.length; i++) {
 			int RandNumber = Rand.nextInt(10)+1;
 			Numeros[i] = RandNumber;
 		}
+		int Maior = Numeros[0];
+	        int Menor = Numeros[0];
+		
 		System.out.print("Numeros gerados: ");
 		for( int i=0; i<Numeros.length; i++)  {
 			System.out.printf(Numeros[i]+ " ");
@@ -26,7 +28,7 @@ public class Vetores3 {
 		  }
 		}
 		for(int i=1; i<Numeros.length; i++) {
-			  if(Numeros[i] < Maior){
+			  if(Numeros[i] < Menor){
 				  Menor = Numeros[i];
 			  }
 			}
